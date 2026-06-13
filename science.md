@@ -6,9 +6,9 @@ Connectomics enables the reconstruction of complete neural wiring diagrams and p
 
 ## Circuit Identification
 
-Directed graphs were constructed from the provided edge lists. Candidate neuron correspondences were first restricted using degree-based fingerprints derived from each neuron's incoming and outgoing connectivity. Weakly connected components were extracted to constrain the search space to biologically meaningful subnetworks. Highly connected hub neurons were then used as anchors for candidate matching, and VF2 directed graph isomorphism testing was performed to verify structural equivalence across datasets.
+Directed graphs were constructed from the provided edge lists, where neurons were represented as nodes and synaptic connections as directed edges. Candidate neuron correspondences were first restricted using degree-based fingerprints derived from in-degree and out-degree connectivity patterns. Weakly connected components were extracted to constrain the search space to biologically meaningful subnetworks. Highly connected hub neurons were used as anchor points for candidate matching, and candidate induced subgraphs were evaluated under a directed graph isomorphism framework.
 
-Using this approach, I identified an 18-neuron weakly connected directed induced subgraph conserved across MAOL v1.1, MANC v1.2.1, and MCNS v0.9. Pairwise VF2 verification confirmed that the complete directed connectivity pattern was preserved across all three datasets.
+VF2 directed graph isomorphism testing confirmed full structural equivalence under a single consistent neuron mapping across MAOL v1.1, MANC v1.2.1, and MCNS v0.9. This procedure identified an 18-neuron weakly connected directed induced subgraph conserved across all three datasets.
 
 ## Biological Interpretation
 
