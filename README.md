@@ -60,7 +60,7 @@ N = 18 neurons, was identified across the MAOL–MANC–MCNS.
 
 - network.csv - matched neuron correspondence table across MAOL, MANC, and MCNS
 - science.md - concise biological interpretation of the conserved circuit
-- figures
+
 
 ## Reproducibility
 
